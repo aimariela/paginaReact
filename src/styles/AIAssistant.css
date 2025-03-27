@@ -1,0 +1,36 @@
+.ai-assistant-container {
+    margin-top: 2rem;
+  }
+  
+  .assistant-panel {
+    margin-top: 1rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    background-color: #fafafa;
+  }
+  
+  .user-question,
+  .ai-response {
+    width: 90%;
+    height: auto;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-family: inherit;
+    font-size: 1rem;
+    resize: none;
+  }
+  
+  /* Modo oscuro */
+  .dark-mode .assistant-panel {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+  }
+  
+  .dark-mode .user-question,
+  .dark-mode .ai-response {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #666;
+  }
+  

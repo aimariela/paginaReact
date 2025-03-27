@@ -1,0 +1,33 @@
+.app {
+  font-family: sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh; /* Altura mínima para ocupar toda la pantalla
+  /*width: 1000px;*/ /* Dimensión fija */
+  height: 500px; /* Dimensión fija */
+  margin: 0 auto; /* Centrar en la página */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrar contenido verticalmente */
+  align-items: center; /* Centrar contenido horizontalmente */
+  border: 1px solid #ccc; /* Borde para mejor visualización */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un mejor diseño */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Modo claro */
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Modo oscuro */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.main-content {
+  padding: 10px; /* Reducir padding para vista compacta */
+  font-size: 14px; /* Texto más pequeño */
+  line-height: 1.4; /* Espaciado entre líneas más compacto */
+}

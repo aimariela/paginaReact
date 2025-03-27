@@ -1,0 +1,93 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .navbar .logo {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navbar .nav-links li {
+    display: inline;
+  }
+  
+  .navbar .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .navbar .nav-links a:hover {
+    color: #666;
+  }
+  
+  .dark-mode-btn {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-left: 20px; /* Empuja el botón hacia el extremo derecho */
+}
+
+/* Estilos para el botón de menú hamburguesa */
+.hamburger-btn {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+  
+  /* Modo oscuro: podrías agregar estilos específicos si deseas */
+  .dark-mode .navbar {
+    background-color: #333;
+  }
+  
+  .dark-mode .navbar .nav-links a {
+    color: #fff;
+  }
+  
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #f5f5f5;
+    width: 100%;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .nav-links.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .hamburger-btn {
+    display: block;
+  }
+
+  .dark-mode-btn {
+    display: inline;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
